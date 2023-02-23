@@ -4,8 +4,8 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin-bottom: 32px;
-  gap: 8px;
+  margin-bottom: 3.2rem;
+  gap: 0.8rem;
 
   > label {
     color: ${({ theme }) => theme.colors.light_400};
@@ -13,8 +13,8 @@ export const Container = styled.div`
 
   > input {
     width: 100%;
-    height: 48px;
-    padding: 16px 14px;
+    height: 4.8rem;
+    padding: 1.6rem 1.4rem;
     background-color: ${({ theme }) => theme.colors.dark_900};
     border: none;
     border-radius: 8px;
