@@ -15,7 +15,7 @@ export function SignIn() {
         <Input
           title="Email"
           type="email"
-          placeholder="Digite seu e-mail"
+          placeholder="Exemplo: maria@exemplo.com"
         />
 
         <Input
