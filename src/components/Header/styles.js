@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Input } from "../Input";
 
 export const Container = styled.header`
   grid-area: header;
@@ -9,14 +10,9 @@ export const Container = styled.header`
   flex-direction: row;
   padding: 6.4rem 0 3.2rem;
 
-  @media (min-width: 768px) {
-    .mobile-content {
-      background-color: red;
-    }
-  }
 `
 
-export const MobileContent = styled.div`
+export const MobileContent = styled.section`
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -33,7 +29,7 @@ export const MobileContent = styled.div`
     }
   }
 
-  // Logo
+  // Logo Mobile
   > div {
     width: 27.8rem;
     height: 2.6rem;
@@ -47,13 +43,40 @@ export const MobileContent = styled.div`
       font-size: 2.4rem;
     }
   }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `
 
-export const Search = styled.div`
+export const DesktopContent = styled.section`
   width: 100%;
-  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  // Logo Desktop
   > div {
-    
+    width: 19.7rem;
+    height: 3rem;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+    }
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+`
+
+export const CustomInput = styled(Input)`
+  div {
+    background-color: red;
   }
 `
