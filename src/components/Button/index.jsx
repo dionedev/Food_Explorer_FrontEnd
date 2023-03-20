@@ -1,9 +1,9 @@
-import { Container } from "./styles"
+import { CustomButton } from "./styles"
 
-export function Button({ title }) {
+export function Button({ className, children}) {
   return(
-    <Container type="button">
-      {title}
-    </Container>
+    <CustomButton className={className}>
+      {children}
+    </CustomButton>
   )
 }
