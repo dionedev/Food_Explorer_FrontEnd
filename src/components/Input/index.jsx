@@ -1,8 +1,8 @@
 import { Container } from "./styles";
 
-export function Input({ icon : Icon, label, title, ...rest}) {
+export function Input({ className, icon: Icon, label, title, ...rest}) {
   return(
-    <Container>
+    <Container className={className}>
       {Icon && <Icon size={22} />}
 
       <label htmlFor={label}>
