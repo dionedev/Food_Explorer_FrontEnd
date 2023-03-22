@@ -23,8 +23,6 @@ export function Header() {
           <img src={MenuIcon} alt="ícone do menu" />
         </MenuButton>
 
-        {/* <Logo/> */}
-
         <CustomLogo>
           <img src={LogoImage} alt="logo em texto escrito food explorer" />
           <h1>food explorer</h1>

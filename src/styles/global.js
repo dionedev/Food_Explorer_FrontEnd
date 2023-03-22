@@ -27,7 +27,7 @@ export default createGlobalStyle`
     text-decoration: none;
   }
 
-  h2, legend, button, a {
+  h1, h2, legend, button, a {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
   }
