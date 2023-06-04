@@ -6,7 +6,6 @@ export function Home() {
   return(
     <Container>
       <Header />
-
       <Content>
         <FrontCover>
           <img src={Cover} alt="Imagem ilustrativa de comida" />

@@ -1,10 +1,10 @@
 import { Container } from "./styles"
 
-export function LinkButton({ title, ...rest }) {
+export function LinkButton({ className, children, ...rest }) {
   return(
-    <Container>
+    <Container className={className}>
       <a {...rest}>
-        {title}
+        {children}
       </a>
     </Container>
   )

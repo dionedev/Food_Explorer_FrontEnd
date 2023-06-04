@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const primaryFont = 'Poppins, sans-serif';
+
 export const Container = styled.div`
   display: grid;
   width: 100%;
@@ -30,7 +32,6 @@ export const FrontCover = styled.div`
   position: relative;
   padding: 0 1rem 0 18rem;
   
-
   > img {
     width: 22rem;
     height: 15rem;
@@ -45,6 +46,7 @@ export const FrontCover = styled.div`
     h1 {
       margin-bottom: 3px;
       white-space: nowrap;
+      font-family: ${primaryFont};
       font-size: 1.8rem;
       font-weight: 600;
     }
@@ -52,6 +54,7 @@ export const FrontCover = styled.div`
     p {
       font-size: 1.2rem;
       font-weight: 400;
+      font-family: ${primaryFont};
     }
   }
 `
