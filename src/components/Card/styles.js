@@ -7,6 +7,7 @@ export const Container = styled.div`
   height: 29.2rem;
   background-color: ${({theme}) => theme.colors.dark_200};
   border-radius: 8px;
+  flex: none;
 `
 
 export const Content = styled.div`
@@ -21,6 +22,7 @@ export const Content = styled.div`
   > span {
     color: ${({theme}) => theme.colors.cake_200};
   }
+
 `
 
 export const FavoriteButton = styled.button`
@@ -57,7 +59,6 @@ export const PlateCounter = styled.div`
     svg {
       fill: ${({theme}) => theme.colors.light_300};
     }
-
   }
 
   > span {

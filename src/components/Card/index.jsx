@@ -1,36 +1,37 @@
 import { Container, Content, FavoriteButton, PlateCounter, ButtonInclude, CustomLinkButton} from "./styles"
-import { AiOutlineHeart, AiFillHeart } from "react-icons/ai"
 import { HiPlus, HiMinus } from "react-icons/hi"
 import { FcLike, FcLikePlaceholder} from "react-icons/fc"
 import { MdArrowForwardIos } from "react-icons/md"
 
-import Dish from "../../assets/Images/Dish.svg"
+// import imageUrl from "../../assets/Images/Dish.svg"
  
-const Card = () => {
-const isFavorite = true
+const Card = ({imageUrl, title, price, amount, style}) => {
+
+  const isFavorite = true
+  
   return(
     <Container>
       <Content>
         <FavoriteButton>
-          {isFavorite ? <FcLike /> : <FcLikePlaceholder/>}
+          {isFavorite ? <FcLike size={26} /> : <FcLikePlaceholder size={26} />}
         </FavoriteButton>
 
         <div>
-          <img src={Dish} alt="Imagem do prato de comida" />
+          <img src={imageUrl} alt={title} />
         </div>
 
         <CustomLinkButton>
-          Salada Ravanello <MdArrowForwardIos />
+          {title} <MdArrowForwardIos />
         </CustomLinkButton>
 
-        <span>R$ 49,97</span>
+        <span>R$ {price}</span>
 
         <PlateCounter>
           <button>
             <HiPlus/>
           </button>
 
-          <span>01</span>
+          <span>{amount}</span>
 
           <button>
             <HiMinus/>

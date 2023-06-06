@@ -1,4 +1,5 @@
 import { Header } from "../../components/Header";
+import Carousel from "../../components/Carousel"
 import Cover from "../../assets/Images/cover.svg"
 import { Container, Content, FrontCover } from "./styles";
 
@@ -15,8 +16,11 @@ export function Home() {
             <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
           </div>
         </FrontCover>
-      </Content>
 
+        <Carousel title="Refeições" />
+        
+          
+      </Content>
     </Container>
   )
 }

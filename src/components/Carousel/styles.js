@@ -10,12 +10,12 @@ export const Container = styled.div`
 `
 
 export const Slider = styled.div`
-  width: 100%;
+  /* width: 100%; */
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: 1.6rem;
- 
+  cursor: grab;
 `
 
 export const SliderButton = styled.button`

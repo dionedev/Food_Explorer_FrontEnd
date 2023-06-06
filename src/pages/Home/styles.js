@@ -19,7 +19,8 @@ export const Content = styled.main`
   grid-area: content;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 4.4rem 1.6rem 2.4rem;
 `
 export const FrontCover = styled.div`
