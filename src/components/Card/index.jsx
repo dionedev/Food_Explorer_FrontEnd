@@ -1,11 +1,16 @@
-import { Container, Content, FavoriteButton, PlateCounter, ButtonInclude, CustomLinkButton} from "./styles"
 import { HiPlus, HiMinus } from "react-icons/hi"
 import { FcLike, FcLikePlaceholder} from "react-icons/fc"
 import { MdArrowForwardIos } from "react-icons/md"
+import { 
+  Container,
+  Content, 
+  FavoriteButton, 
+  OrderQuantity, 
+  ButtonInclude, 
+  CustomLinkButton
+} from "./styles"
 
-// import imageUrl from "../../assets/Images/Dish.svg"
- 
-const Card = ({imageUrl, title, price, amount, style}) => {
+const Card = ({ imageUrl, title, price, amount }) => {
 
   const isFavorite = true
   
@@ -26,7 +31,7 @@ const Card = ({imageUrl, title, price, amount, style}) => {
 
         <span>R$ {price}</span>
 
-        <PlateCounter>
+        <OrderQuantity>
           <button>
             <HiPlus/>
           </button>
@@ -36,7 +41,7 @@ const Card = ({imageUrl, title, price, amount, style}) => {
           <button>
             <HiMinus/>
           </button>
-        </PlateCounter>
+        </OrderQuantity>
 
         <ButtonInclude>
           incluir

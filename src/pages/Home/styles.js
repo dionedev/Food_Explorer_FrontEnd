@@ -6,7 +6,8 @@ export const Container = styled.div`
   display: grid;
   width: 100%;
   height: 100vh;
-  grid-template-columns: 1fr;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas: 
     "header header"
@@ -17,35 +18,31 @@ export const Container = styled.div`
 
 export const Content = styled.main`
   grid-area: content;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: 42.8rem;
   padding: 4.4rem 1.6rem 2.4rem;
-`
-export const FrontCover = styled.div`
-  display: flex;
   align-items: center;
-  width: 37.6rem;
+`
+
+
+export const CoverSection = styled.section`
+  display: flex;
+  width: 100%;
   height: 12rem;
+  justify-content: end;
   background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
   border-radius: 4px;
   position: relative;
-  padding: 0 1rem 0 18rem;
-  
-  > img {
-    width: 22rem;
-    height: 15rem;
-    position: absolute;
-    top: -3rem;
-    left: -3rem;
-    object-fit: cover;
-  }
 
   > div {
+    display: flex;
+    width: 21.5rem;
+    flex-direction: column;
+    justify-content: center;
 
     h1 {
-      margin-bottom: 3px;
+      padding-bottom: 6px;
       white-space: nowrap;
       font-family: ${primaryFont};
       font-size: 1.8rem;
@@ -54,8 +51,20 @@ export const FrontCover = styled.div`
     
     p {
       font-size: 1.2rem;
-      font-weight: 400;
       font-family: ${primaryFont};
     }
   }
+`
+export const CoverImage = styled.img`
+  width: 19rem;
+  height: 17rem;
+  position: absolute;
+  top: -5rem;
+  left: -3rem;
+  object-fit: cover;
+`
+
+export const CarouselSection = styled.section`
+  display: grid;
+  gap: 2rem;
 `

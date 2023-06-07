@@ -44,7 +44,7 @@ export const CustomLinkButton = styled(LinkButton)`
   }
 `
 
-export const PlateCounter = styled.div`
+export const OrderQuantity = styled.div`
   display: flex;
   align-items: center;
   gap: 1.4rem;
@@ -53,7 +53,7 @@ export const PlateCounter = styled.div`
     display: flex;
     background: none;
     border: none;
-    font-size: 3rem;
+    font-size: 1.8rem;
     align-items: center;
 
     svg {
