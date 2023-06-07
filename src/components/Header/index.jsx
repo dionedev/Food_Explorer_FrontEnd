@@ -1,8 +1,9 @@
 import ReceiptIcon from "../../assets/Icons/Receipt.svg"
 import SignOutIcon from "../../assets/Icons/SignOut.svg"
 import LogoImage from "../../assets/Icons/Polygon.svg"
-import MenuIcon from "../../assets/Icons/Menu.svg"
-import { FiSearch } from "react-icons/fi"
+import { FiSearch, FiMenu } from "react-icons/fi"
+import { TbReceipt } from "react-icons/tb"
+import { GoSignOut } from "react-icons/go"
 import { 
   Container,
   MobileContent, 
@@ -16,11 +17,14 @@ import {
 } from "./styles"
 
 export function Header() {
+
+  const ICON_SIZE = 26
+  
   return(
     <Container>
       <MobileContent>
         <MenuButton type="button">
-          <img src={MenuIcon} alt="ícone do menu" />
+          <FiMenu size={ICON_SIZE} />
         </MenuButton>
 
         <CustomLogo>
@@ -29,7 +33,7 @@ export function Header() {
         </CustomLogo>
 
         <ReceiptButton type="button">
-          <img src={ReceiptIcon} alt="ícone de recibo" />
+          <TbReceipt size={ICON_SIZE} />
         </ReceiptButton>
       </MobileContent>
       
@@ -45,12 +49,12 @@ export function Header() {
         />
 
         <OrderButton>
-          <img src={ReceiptIcon} alt="ícone de recibo" />
+          <TbReceipt size={ICON_SIZE} />
           Pedidos (0)
         </OrderButton>
 
         <SignOut type="button">
-          <img src={SignOutIcon} alt="ícone para sair da aplicação" />
+          <GoSignOut size={ICON_SIZE} />
         </SignOut>
       </DesktopContent>
     </Container>

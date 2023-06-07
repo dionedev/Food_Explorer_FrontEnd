@@ -21,10 +21,9 @@ export const Content = styled.main`
   display: flex;
   flex-direction: column;
   max-width: 42.8rem;
-  padding: 4.4rem 1.6rem 2.4rem;
+  padding: 5.5rem 2.4rem 1.6rem;
   align-items: center;
 `
-
 
 export const CoverSection = styled.section`
   display: flex;
@@ -37,7 +36,7 @@ export const CoverSection = styled.section`
 
   > div {
     display: flex;
-    width: 21.5rem;
+    width: 22rem;
     flex-direction: column;
     justify-content: center;
 
@@ -58,13 +57,15 @@ export const CoverSection = styled.section`
 export const CoverImage = styled.img`
   width: 19rem;
   height: 17rem;
+  object-fit: cover;
   position: absolute;
   top: -5rem;
   left: -3rem;
-  object-fit: cover;
 `
 
 export const CarouselSection = styled.section`
-  display: grid;
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2.4rem;
 `

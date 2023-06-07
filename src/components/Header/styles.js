@@ -39,22 +39,24 @@ export const DesktopContent = styled.section`
 `
 
 export const MenuButton = styled.button`
+  display: flex;
+  align-self: center;
   background: transparent;
   border: none;
 
-  > img { 
-    width: 2.6rem;
-    height: 2.2rem;
+  > svg {
+    color: ${({ theme }) => theme.colors.light_100};
   }
 `
 
 export const ReceiptButton = styled.button`
+  display: flex;
+  align-self: center;
   background: transparent;
   border: none;
 
-  > img { 
-    width: 2.6rem;
-    height: 2.2rem;
+  > svg {
+    color: ${({ theme }) => theme.colors.light_100};
   }
 `
 
@@ -100,14 +102,15 @@ export const OrderButton = styled(Button)`
   margin-right: 3.2rem;
   white-space: nowrap;
   padding: 2rem;
-
-  > img {
-    width: 2.2rem;
-    height: 2.2rem;
-  }
 `
 
 export const SignOut = styled.button`
+  display: flex;
+  align-self: center;
   background: none;
   border: none;
+
+  > svg {
+    color: ${({ theme }) => theme.colors.light_100};
+  }
 `
