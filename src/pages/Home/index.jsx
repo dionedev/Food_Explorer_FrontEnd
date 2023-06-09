@@ -4,10 +4,10 @@ import Card from "../../components/Card"
 import Cover from "../../assets/Images/cover1.svg"
 import {
   Container, 
-  // Content, 
-  // CoverSection,
-  // CarouselSection,
-  // CoverImage 
+  Content, 
+  CoverSection,
+  CarouselSection,
+  CoverImage 
 } from "./styles";
 
 import imagePath from "../../assets/Images/Dish.svg"
@@ -33,7 +33,7 @@ export function Home() {
   return(
     <Container>
       <Header />
-      {/* <Content>
+      <Content>
         <CoverSection>
           <CoverImage src={Cover} alt="Imagem ilustrativa de comida" />
           <div>
@@ -88,7 +88,7 @@ export function Home() {
       </Content>
       <footer>
         FOOTER AQUI
-      </footer> */}
+      </footer>
     </Container>
   )
 }
