@@ -7,7 +7,7 @@ import {
   Content, 
   CoverSection,
   CarouselSection,
-  CoverImage 
+  CoverImage
 } from "./styles";
 
 import imagePath from "../../assets/Images/Dish.svg"
@@ -23,16 +23,12 @@ export function Home() {
     { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
     { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
     { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
-    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
-    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
-    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
-    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
-    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
   ];
 
   return(
     <Container>
       <Header />
+
       <Content>
         <CoverSection>
           <CoverImage src={Cover} alt="Imagem ilustrativa de comida" />
@@ -43,49 +39,50 @@ export function Home() {
         </CoverSection>
 
         <CarouselSection>
-          <Carousel title="Refeições">
-            {
-              cards.map((card, index) => (
-                <Card
-                  key={index} 
-                  title={card.title}
-                  price={card.price}
-                  amount={card.amount}
-                  imageUrl={card.imageUrl}
-                />
-              ))
-            }   
-          </Carousel>
+        <Carousel title="Refeições">
+              {
+                cards.map((card, index) => (
+                  <Card
+                    key={index} 
+                    title={card.title}
+                    price={card.price}
+                    amount={card.amount}
+                    imageUrl={card.imageUrl}
+                  />
+                ))
+              }   
+            </Carousel>
 
-          <Carousel title="Pratos principais">
-            {
-              cards.map((card, index) => (
-                <Card
-                  key={index} 
-                  title={card.title}
-                  price={card.price}
-                  amount={card.amount}
-                  imageUrl={card.imageUrl}
-                />
-              ))
-            }   
-          </Carousel>
+            <Carousel title="Pratos principais">
+              {
+                cards.map((card, index) => (
+                  <Card
+                    key={index} 
+                    title={card.title}
+                    price={card.price}
+                    amount={card.amount}
+                    imageUrl={card.imageUrl}
+                  />
+                ))
+              }   
+            </Carousel>
 
-          <Carousel title="Pratos principais">
-            {
-              cards.map((card, index) => (
-                <Card
-                  key={index} 
-                  title={card.title}
-                  price={card.price}
-                  amount={card.amount}
-                  imageUrl={card.imageUrl}
-                />
-              ))
-            }   
-          </Carousel>
+            <Carousel title="Pratos principais">
+              {
+                cards.map((card, index) => (
+                  <Card
+                    key={index} 
+                    title={card.title}
+                    price={card.price}
+                    amount={card.amount}
+                    imageUrl={card.imageUrl}
+                  />
+                ))
+              }   
+            </Carousel>
         </CarouselSection>
       </Content>
+      
       <footer>
         FOOTER AQUI
       </footer>

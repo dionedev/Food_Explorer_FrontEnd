@@ -3,21 +3,14 @@ import styled from "styled-components";
 const primaryFont = 'Poppins, sans-serif';
 
 export const Container = styled.div`
-  display: grid;
+  display: flex;
   width: 100%;
-  height: 100vh;
-  background: orange;
+  min-height: 100vh;
   justify-items: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-areas: 
-    "header header"
-    "content content"
-    "footer footer"
-  ;
+  align-items: center;
+  flex-direction: column;
 
   > footer { // CRIAR COMPONENTE
-    grid-area: footer;
     display: flex;
     background-color: #fff;
     color: red;
@@ -34,12 +27,10 @@ export const Container = styled.div`
     ;
   } */
 `
-
+ 
 export const Content = styled.main`
-  grid-area: content;
   display: flex;
   flex-direction: column;
-  background: aqua;
   width: 100%;
   max-width: 42.8rem;
   padding: 5.5rem 2.4rem 1.6rem;
