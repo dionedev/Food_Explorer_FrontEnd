@@ -1,5 +1,3 @@
-import ReceiptIcon from "../../assets/Icons/Receipt.svg"
-import SignOutIcon from "../../assets/Icons/SignOut.svg"
 import LogoImage from "../../assets/Icons/Polygon.svg"
 import { FiSearch, FiMenu } from "react-icons/fi"
 import { TbReceipt } from "react-icons/tb"

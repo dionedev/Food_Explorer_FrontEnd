@@ -1,10 +1,11 @@
-import { useRef } from "react"
+import { useEffect, useRef } from "react"
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl"
 import {Container, Slider, SliderButton} from "./styles"
 
 const Carousel = ({title, children}) => {
 
   const carousel = useRef(null)
+  const ICON_SIZE = 25
 
   const handleLeftSlider = (e) => {
     e.preventDefault()
@@ -21,7 +22,7 @@ const Carousel = ({title, children}) => {
       <h3>{title}</h3>
 
       <SliderButton onClick={handleLeftSlider}>
-        <SlArrowLeft size={25} />
+        <SlArrowLeft size={ICON_SIZE} />
       </SliderButton>
 
       <Slider ref={carousel}>
@@ -29,8 +30,9 @@ const Carousel = ({title, children}) => {
       </Slider>
 
       <SliderButton onClick={handleRightSlider}>
-        <SlArrowRight size={25} />
+        <SlArrowRight size={ICON_SIZE} />
       </SliderButton>
+      
     </Container>
   )
 }

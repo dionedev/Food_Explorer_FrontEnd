@@ -4,10 +4,10 @@ import Card from "../../components/Card"
 import Cover from "../../assets/Images/cover1.svg"
 import {
   Container, 
-  Content, 
-  CoverSection,
-  CarouselSection,
-  CoverImage 
+  // Content, 
+  // CoverSection,
+  // CarouselSection,
+  // CoverImage 
 } from "./styles";
 
 import imagePath from "../../assets/Images/Dish.svg"
@@ -22,17 +22,23 @@ export function Home() {
     { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 4 },
     { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
     { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
+    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
+    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
+    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
+    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
+    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
+    { title: 'Salada', price: '10,10', imageUrl: imagePath, amount: 5 },
   ];
 
   return(
     <Container>
       <Header />
-      <Content>
+      {/* <Content>
         <CoverSection>
           <CoverImage src={Cover} alt="Imagem ilustrativa de comida" />
           <div>
             <h1>Sabores inigualáveis</h1>
-            <p>Sinta o cuidado do preparo com ingredientes selecionados.</p>
+            <p>Sinta o cuidado do preparo com ingredientes selecionados</p>
           </div>
         </CoverSection>
 
@@ -79,8 +85,10 @@ export function Home() {
             }   
           </Carousel>
         </CarouselSection>
-
       </Content>
+      <footer>
+        FOOTER AQUI
+      </footer> */}
     </Container>
   )
 }
