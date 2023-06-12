@@ -9,10 +9,9 @@ export const Container = styled.header`
   background-color: ${({ theme }) => theme.colors.dark_700};
   display: flex;
   flex-direction: row;
-  padding: 2rem;
 
   @media (min-width: 768px) {
-    padding: 0 12.3rem;
+    padding: 0 3rem;
   }
 `
 
@@ -88,7 +87,7 @@ export const CustomLogo = styled.div`
 `
 
 export const Search = styled(Input)`
-  width: 58rem;
+  max-width: 70rem;
   min-width: 25rem;
   margin-right: 3.2rem;
 `
