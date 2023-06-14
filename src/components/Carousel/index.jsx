@@ -1,8 +1,9 @@
-import { useEffect, useRef } from "react"
+import { useRef } from "react"
 import { SlArrowLeft, SlArrowRight } from "react-icons/sl"
 import {Container, Slider, SliderButton} from "./styles"
+import { Card } from "../Card"
 
-const Carousel = ({title, children}) => {
+export const Carousel = ({title, children}) => {
 
   const carousel = useRef(null)
   const ICON_SIZE = 25
@@ -36,4 +37,3 @@ const Carousel = ({title, children}) => {
     </Container>
   )
 }
-export default Carousel

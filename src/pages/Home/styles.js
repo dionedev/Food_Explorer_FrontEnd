@@ -12,9 +12,12 @@ export const Container = styled.div`
 
   > footer { // CRIAR COMPONENTE
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
-    color: red;
+    color: #000;
     width: 100%;
+    height: 7.7rem;
   }
 
   /* @media (min-width: 620px) {
@@ -30,13 +33,15 @@ export const Container = styled.div`
  
 export const Content = styled.main`
   display: flex;
-  flex-direction: column;
   width: 100%;
-  max-width: 42.8rem;
+  min-width: 42.8rem;
+  max-width: 130rem;
+  flex-direction: column;
+  align-items: center;
   padding: 5.5rem 2.4rem 1.6rem;
-
-  @media (min-width: 620px) {
-    /* width: 100%; */
+  
+  @media (min-width: 768px) {
+    padding: 5.5rem 3rem 1.6rem;
   }
 `
 
@@ -52,24 +57,50 @@ export const CoverSection = styled.section`
 
   > div {
     display: flex;
-    width: 22rem;
+    width: 100%;
+    max-width: 57.4rem;
     flex-direction: column;
     justify-content: center;
+    padding: 0 1rem 0 16rem;
 
     h1 {
       padding-bottom: 6px;
       white-space: nowrap;
       font-family: ${primaryFont};
-      font-size: 1.8rem;
+      font-size: clamp(1.6rem, 4.5vw, 2.5rem);
       font-weight: 600;
     }
     
     p {
-      font-size: 1.2rem;
+      font-size: clamp(1rem, 3vw, 1.6rem);
       font-family: ${primaryFont};
     }
   }
+
+  @media (min-width: 768px) {
+    height: 26rem;
+    padding-left: 34rem;
+
+    > div {
+      max-width: 60rem;
+      padding: 1rem;
+
+      h1 {
+        padding-bottom: 8px;
+        white-space: nowrap;
+        font-family: ${primaryFont};
+        font-size: clamp(3rem, 4vw, 4.5rem);
+        font-weight: 600;
+      }
+      
+      p {
+        font-size: clamp(1rem, 2vw, 1.8rem);
+        font-family: ${primaryFont};
+      }
+    }
+  }
 `
+
 export const CoverImage = styled.img`
   width: 19rem;
   height: 17rem;
@@ -77,6 +108,15 @@ export const CoverImage = styled.img`
   position: absolute;
   top: -5rem;
   left: -3rem;
+
+  @media (min-width: 768px) {
+    width: 63.2rem;
+    height: 35rem;
+    object-fit: contain;
+    position: absolute;
+    top: -9rem;
+    left: -16rem;
+  }
 `
 
 export const CarouselSection = styled.section`

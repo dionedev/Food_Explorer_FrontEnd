@@ -10,7 +10,7 @@ import {
   CustomLinkButton
 } from "./styles"
 
-const Card = ({ imageUrl, title, price, amount }) => {
+export const Card = ({ imageUrl, title, price, amount }) => {
 
   const isFavorite = true
   
@@ -51,4 +51,3 @@ const Card = ({ imageUrl, title, price, amount }) => {
     </Container>
   )
 }
-export default Card
