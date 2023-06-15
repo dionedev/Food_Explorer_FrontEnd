@@ -24,14 +24,15 @@ export const Slider = styled.div`
 `
 
 export const SliderButton = styled.button`
-  background: none;
+  width: 10.5rem;
+  height: 29.2rem;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
 
   position: absolute;
-  top: 50%;
+  top: 14%;
 
   color: ${({ theme }) => theme.colors.light_100};
   cursor: pointer;
@@ -47,9 +48,13 @@ export const SliderButton = styled.button`
 `
 
 export const LeftSliderButton = styled(SliderButton)`
-  left: 2rem;
+  left: 0rem;
+  background: linear-gradient(270deg, rgba(0, 10, 15, 0.2725) 0%, #000A0F 100%);
+
 `
 
 export const RightSliderButton = styled(SliderButton)`
-  right: 2rem;
+  right: 0rem;
+  background: linear-gradient(90deg, rgba(0, 10, 15, 0.2725) 0%, #000A0F 100%);
+
 `
