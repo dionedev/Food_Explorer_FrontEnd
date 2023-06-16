@@ -33,13 +33,13 @@ export const Card = ({ imageUrl, title, price, amount }) => {
 
         <OrderQuantity>
           <button>
-            <HiPlus/>
+            <HiMinus/>
           </button>
 
           <span>{amount}</span>
 
           <button>
-            <HiMinus/>
+            <HiPlus/>
           </button>
         </OrderQuantity>
 
