@@ -1,4 +1,4 @@
-import LogoImage from "../../assets/Icons/Polygon.svg"
+import Polygon from "../../assets/Icons/Polygon.svg"
 import { FiSearch, FiMenu } from "react-icons/fi"
 import { TbReceipt } from "react-icons/tb"
 import { GoSignOut } from "react-icons/go"
@@ -26,7 +26,7 @@ export function Header() {
         </MenuButton>
 
         <CustomLogo>
-          <img src={LogoImage} alt="logo em texto escrito food explorer" />
+          <img src={Polygon} alt="imagem decorativa de um polígono" />
           <h1>food explorer</h1>
         </CustomLogo>
 
@@ -37,7 +37,7 @@ export function Header() {
       
       <DesktopContent>
         <CustomLogo>
-          <img src={LogoImage} alt="logo em texto escrito food explorer" />
+          <img src={Polygon} alt="imagem decorativa de um polígono" />
           <h1>food explorer</h1>
         </CustomLogo>
 

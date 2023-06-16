@@ -39,7 +39,14 @@ export const SliderButton = styled.button`
   z-index: 1;
 
   > svg {
-    fill: ${({ theme }) => theme.colors.light_100};
+    display: none;
+  }
+
+  &:hover {
+    > svg {
+      display: block;
+      fill: ${({ theme }) => theme.colors.light_100};
+    }
   }
 
   @media (max-width: 768px) {

@@ -10,7 +10,7 @@ import {
 export const Carousel = ({title, children}) => {
 
   const carousel = useRef(null)
-  const ICON_SIZE = 25
+  const ICON_SIZE = 35
 
   const handleLeftSlider = (e) => {
     e.preventDefault()

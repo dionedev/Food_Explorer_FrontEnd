@@ -9,26 +9,7 @@ export const Container = styled.div`
   justify-items: center;
   align-items: center;
   flex-direction: column;
-
-  > footer { // CRIAR COMPONENTE
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    color: #000;
-    width: 100%;
-    height: 7.7rem;
-  }
-
-  /* @media (min-width: 620px) {
-    background: orange;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "content content content"
-    "footer footer footer"
-    ;
-  } */
+  overflow-x: hidden;
 `
  
 export const Content = styled.main`
@@ -49,7 +30,7 @@ export const CoverSection = styled.section`
   display: flex;
   width: 100%;
   height: 12rem;
-  justify-content: end;
+  justify-content: center;
   background: linear-gradient(180deg, #091E26 0%, #00131C 100%);
   border-radius: 4px;
   position: relative;
@@ -89,7 +70,7 @@ export const CoverSection = styled.section`
         padding-bottom: 8px;
         white-space: nowrap;
         font-family: ${primaryFont};
-        font-size: clamp(3rem, 4vw, 4.5rem);
+        font-size: clamp(3rem, 4vw, 5rem);
         font-weight: 600;
       }
       

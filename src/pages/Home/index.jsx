@@ -11,6 +11,7 @@ import {
 } from "./styles";
 
 import imagePath from "../../assets/Images/Dish.svg"
+import { Footer } from "../../components/Footer";
 
 export function Home() {
 
@@ -88,9 +89,7 @@ export function Home() {
         </CarouselSection>
       </Content>
 
-      <footer>
-        FOOTER AQUI
-      </footer>
+      <Footer />
     </Container>
   )
 }
